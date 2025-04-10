@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Food Allergy Assistant</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><i class="fas fa-allergies"></i> AllergySafe</h1>
+      <p>Scan food ingredients to detect allergens</p>
+    </header>
+
+    <div class="scanner-box">
+      <div class="scanner-header">
+        <h2><i class="fas fa-barcode"></i> Scan Ingredients</h2>
+      </div>
+      <textarea id="ingredientsInput" placeholder="Paste ingredients or take a photo..."></textarea>
+      <button id="scanBtn"><i class="fas fa-search"></i> Check for Allergens</button>
+    </div>
+
+    <div class="allergy-preferences">
+      <h3><i class="fas fa-user-cog"></i> Your Allergies</h3>
+      <div class="allergy-tags" id="allergyTags"></div>
+      <div style="margin-top: 10px;">
+        <input type="text" id="newAllergyInput" placeholder="Add new allergen..." />
+        <button id="addAllergyBtn"><i class="fas fa-plus"></i> Add</button>
+      </div>
+    </div>
+
+    <div class="results-box hidden" id="resultsBox">
+      <h3 id="resultsHeader"><i class="fas fa-exclamation-triangle"></i> Allergy Alert!</h3>
+      <div id="allergyResults"></div>
+    </div>
+
+    <div class="team-info">
+      <hr />
+      <p><strong>Developed by:-</strong></p>
+      <p><strong>Name:- D. Raghu — Reg No: 12403421</strong></p>
+      <p><strong>Name:- D. Suresh Kumar — Reg No: 12402054</strong></p>
+      <p><strong>Name:- C. Lokesh Kumar Raju — Reg No: 12415276</strong></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
